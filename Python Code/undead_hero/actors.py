@@ -10,11 +10,11 @@ class Actor:
 
     def attack_action(self):
         #grab the target of the attack and then decrease health of target if hit
-        pass
+        print('Attacking!')
     
     def defend_action(self):
         #grab the defenders defense and then if hit subtract the amount of defense from the attack damage
-        pass
+        print('Defending!')
 
 
 class Player(Actor):
@@ -31,21 +31,21 @@ class Player(Actor):
 
     def inspect_action(self):
         #grab a stat block of the target
-        pass
+        print('inspecting item...')
 
     def move_action(self):
         #moves the player in a specific direction
-        pass
+        print('moving in the direction!')
 
     #player specific combat actions
 
     def info_action(self):
         #grab a stat block of the target
-        pass
+        print('researching enemy...')
 
     def run_action(self):
         #grab the target of the attack and then decrease health of target if hit
-        pass
+        print('running away!')
     
 class Enemy(Actor):
     def __init__(self, level, attack, defense, health, armor_class, kind):
